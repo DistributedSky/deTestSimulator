@@ -2,7 +2,7 @@
 
 ### Software Requirement
 
-Убедитесь, что в системе установлена система контроля версий Git.
+Убедитесь, что в системе установлена система контроля версий `Git`.
 
 Так как Drone Employee архитектурно выполнен в микросервисной архитектуре на базе Docker и использует последнего для развертывания, нужно установить следующее программное обеспечение:
 
@@ -205,5 +205,5 @@ $ cd ./DroneEmployeeDocker
 
 ## How to use
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=CUvrQ662WjU&t" target="_blank"><img src="http://img.youtube.com/vi/ID_ВИДЕОРОЛИКА_НА_YOUTUBE/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=CUvrQ662WjU&t" target="_blank"><img src="http://img.youtube.com/vi/CUvrQ662WjU/0.jpg" 
 alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="240" height="180" border="10" /></a>
