@@ -205,9 +205,25 @@ $ cd ./deTestSimulator
 ### Volumes
 Секция подключаемых образов файловой системы для вышеописанных сервисов.
 
-## Install
+## Install & Run
 
-## How to use
+Для инсталяции и запуска выполните следующую команду: 
+
+```
+docker-compose up
+```
+
+## How to use (dApp)
+
+Open in browser next URL:
+
+```
+http://127.0.0.1:8888
+```
+
+Click on Start Mission button and simulate drone will fly by smart-contract.
+
+## How to use (Video) 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=CUvrQ662WjU&t" target="_blank"><img src="http://img.youtube.com/vi/CUvrQ662WjU/0.jpg" 
 alt="How to use" width="240" height="180" border="10" /></a>
