@@ -93,7 +93,7 @@ num_verifiers = 6
 
 Установка IPFS производится при помощи утилиты `ipfs-update`.
 
-####Installing with ipfs-update
+#### Installing with ipfs-update
 
 `ipfs-update` is a command-line tool to install and upgrade the ipfs binary.
 
