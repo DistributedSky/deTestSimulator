@@ -161,7 +161,7 @@ ipfs daemon --enable-pubsub-experiment
 
 Then use the ipfs pubsub commands. 
 
-### Install
+## Download
 
 Откройте консоль и скопируйте с Git репозиторий фреймворка в удобный для вас каталог:
 
@@ -204,6 +204,8 @@ $ cd ./deTestSimulator
 
 ### Volumes
 Секция подключаемых образов файловой системы для вышеописанных сервисов.
+
+## Install
 
 ## How to use
 
