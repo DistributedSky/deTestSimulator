@@ -1,0 +1,45 @@
+version: '2.2'
+services:
+  simserver:
+    image: simlabs/simserver:$TAG
+    init: true
+    ports:
+      - "8888:8888"
+      - "1234:1234"
+      - "50000-50200:50000-50200"
+    expose:
+      - "3344"
+      - "3355"
+  robonomics:
+    init: true
+    image: simlabs/robonomics-ros:$TAG
+    environment:
+      PYTHONUNBUFFERED: 1
+      LIGHTHOUSE_CONTRACT: "mobilerobotics.lighthouse.1.robonomics.eth"
+      SIMLABS_BACKEND_ADDR: "simserver:3344"
+      IPFS_API_ADDR: "http://192.168.1.27:5001"
+      WEB3_API_ADDR: "http://192.168.1.27:8545"
+  drone_proxy:
+    image: simlabs/hamachi:latest
+    sysctls: 
+      - net.ipv6.conf.all.disable_ipv6=0
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - vpnconfig:/config
+      - /etc/localtime:/etc/localtime
+    environment:
+      PYTHONUNBUFFERED: 1
+      HAMACHI_LOGIN: YOUR_NETWORK
+      HAMACHI_PASSWORD: YOUR_NETWORK_PASSWORD
+  drone_proxy_impl:
+    init: true
+    image: simlabs/drone-proxy:$TAG
+    environment:
+      PYTHONUNBUFFERED: 1
+      SIMLABS_DRONE_PROXY_ADDR: "simserver:3355"
+      ROS_IFACE: ham0
+    network_mode: service:drone_proxy
+
+volumes:
+  vpnconfig:
