@@ -165,7 +165,7 @@ Then use the ipfs pubsub commands.
 
 ```bash
 $ cd ~/
-$ git clone https://github.com/muchosun/DroneEmployeeDocker.git
+$ git clone https://github.com/DroneEmployee/deTestSimulator.git
 $ cd ./DroneEmployeeDocker
 ```
 В корневом каталоге загруженного репозитория располагается конфигурационный файл Docker Compose в формате .yaml. 
