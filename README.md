@@ -92,10 +92,11 @@ num_verifiers = 6
 ### IPFS
 
 Установка IPFS производится при помощи утилиты `ipfs-update`.
-```
-Installing with ipfs-update
-ipfs-update is a command-line tool to install and upgrade the ipfs binary.
-```
+
+####Installing with ipfs-update
+
+`ipfs-update` is a command-line tool to install and upgrade the ipfs binary.
+
 Getting ipfs-update
 `ipfs-update` can be downloaded for your platform at: https://dist.ipfs.io/#ipfs-update​
 
@@ -107,7 +108,8 @@ $ go get -u github.com/ipfs/ipfs-update
 
 When installing new versions of ipfs or upgrading make sure you are using the latest version of ipfs-update.
 
-`Installing ipfs with ipfs-update`
+####Installing ipfs with ipfs-update
+
 `ipfs-update` versions lists all the available ipfs versions which are available for download:
 
 ```bash
@@ -166,7 +168,7 @@ Then use the ipfs pubsub commands.
 ```bash
 $ cd ~/
 $ git clone https://github.com/DroneEmployee/deTestSimulator.git
-$ cd ./DroneEmployeeDocker
+$ cd ./deTestSimulator
 ```
 В корневом каталоге загруженного репозитория располагается конфигурационный файл Docker Compose в формате .yaml. 
 
@@ -195,7 +197,7 @@ $ cd ./DroneEmployeeDocker
 ### Drone-proxy
 Контейнер содержащий в себе сервис по обеспечению p2p связи между БПЛА и наземной станицей. В данном контейнере за основу взято готовое решение hamachi, которое позволяет добиться максимального качества при деградации соединения.
 
-В данном разделе можно указать логин и пароль от вашей заранее созданной сети [Hamachi](https://vpn.net). Как это сделать будет показано далее.
+В данном разделе можно указать логин и пароль от вашей заранее созданной сети [Hamachi](https://vpn.net).
 
 ### Drone-proxy-impl
 Контейнер содержащий в себе коммуникационный сервис для организации связи стека ROS и физического БПЛА для передачи команд автоматизированного управления.  Использует контейнер drone-proxy для коммуникации с БПЛА.
@@ -206,4 +208,4 @@ $ cd ./DroneEmployeeDocker
 ## How to use
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=CUvrQ662WjU&t" target="_blank"><img src="http://img.youtube.com/vi/CUvrQ662WjU/0.jpg" 
-alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="240" height="180" border="10" /></a>
+alt="How to use" width="240" height="180" border="10" /></a>
