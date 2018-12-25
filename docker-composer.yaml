@@ -1,7 +1,7 @@
 version: '2.2'
 services:
   simserver:
-    image: simlabs/simserver:$TAG
+    image: simlabs/simserver:1.0.1-de
     init: true
     ports:
       - "8888:8888"
@@ -12,7 +12,7 @@ services:
       - "3355"
   robonomics:
     init: true
-    image: simlabs/robonomics-ros:$TAG
+    image: simlabs/robonomics-ros:1.0.1-de 
     environment:
       PYTHONUNBUFFERED: 1
       LIGHTHOUSE_CONTRACT: "mobilerobotics.lighthouse.1.robonomics.eth"
@@ -34,7 +34,7 @@ services:
       HAMACHI_PASSWORD: YOUR_NETWORK_PASSWORD
   drone_proxy_impl:
     init: true
-    image: simlabs/drone-proxy:$TAG
+    image: simlabs/drone-proxy:latest
     environment:
       PYTHONUNBUFFERED: 1
       SIMLABS_DRONE_PROXY_ADDR: "simserver:3355"
